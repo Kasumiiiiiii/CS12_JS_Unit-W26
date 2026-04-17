@@ -80,9 +80,9 @@ Open [Internal_External_Console.html](Internal_External_Console/Internal_Externa
 View the website and observe the console output. 
 1. Questions to discuss:   
    
-    a. Which script runs first?
+    a. Which script runs first? ans: whatever put first
 
-    b. Can you change the location of the script link in your HTML and see if/how that changes the order of the output? 
+    b. Can you change the location of the script link in your HTML and see if/how that changes the order of the output? ans: yes
 
 ---
 
@@ -104,7 +104,8 @@ console.log("Comments make your code more readable by others.");
 
 <h4 style="background-color: yellow;"> Task 1.3: Try the following using console.log in the previous task. </h4>
 
-1. Is there a difference between using a single or a double quote (' vs. ")?
+1. Is there a difference between using a single or a double quote (' vs. ")? ans: there is no different
+
 2. Remove the semicolon ;     
 (A semicolon may be omitted in most cases when a line break exists.  JavaScript interprets the line break as an "implicit" semicolon.)
 
@@ -112,6 +113,10 @@ console.log("Comments make your code more readable by others.");
 
 4. Compare the output of the following code. 
  * `console.log("What","do","commas","do?");`
+ ans: Using commas between arguments automatically inserts a single space between each item.
 * `console.log("Does", "adding",      "space", "matter?");`
+ans: Adding spaces after commas in the code does not add extra spaces to the output; the console still uses a single space separator.
 * `console.log('Launch' + 'Code');`
+ans: The + operator performs concatenation, joining the strings directly without adding any spaces.
 * `console.log("LaunchCode was founded in", 2013);`
+ans: This demonstrates that console.log can handle multiple data types (string and number) in one line, separated by an automatic space.

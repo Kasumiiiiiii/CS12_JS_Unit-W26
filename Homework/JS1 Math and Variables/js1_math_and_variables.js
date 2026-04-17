@@ -16,16 +16,19 @@ function q1() {
   /* Create a program that will prompt the user to enter 2 numbers. 
         In the console: Your program  will then display these 2 numbers 
         and the sum of these 2 numbers.*/
-} //Sum of Two
-
-function q2() {
-  /* Write a program that will prompt the user to input their first name, 
-        last name and year they were born. 
-        In the console: The program will then print the person’s full name and their age.*/
-} //Name and Age
-
-function q3() {
-  /* Create a program that will prompt a user to enter the radius of a circle. 
+        let number1 = Number(prompt("What is your first number?"));
+        let number2 = Number(prompt("What is your second number?"));
+        let theResult = number1 + number2;
+        console.log(Number(theResult))
+      } //Sum of Two
+      
+      function q2() {
+        /* Write a program that will prompt the user to input their first name, 
+              last name and year they were born. 
+              In the console: The program will then print the person’s full name and their age.*/
+      } //Name and Age
+      
+      function q3() {  /* Create a program that will prompt a user to enter the radius of a circle. 
         In the console: Your program will then display the circumference of that circle and it’s area.*/
 } //Circle Circumference and Area
 
