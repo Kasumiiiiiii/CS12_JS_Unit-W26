@@ -3,6 +3,23 @@
 
 function t1() {
   /*  */
+  let style = ["Jazz", "Blues"];
+  console.log(`Step 1: ${style}`);
+
+  style.push("Rock-n-Roll");
+  console.log(`Step 2: ${style}`);
+
+  // find middle
+  let middleIndex = (style.length - 1) / 2;
+  style[middleIndex] = "Classics";
+  console.log(`Step 3: ${style}`);
+
+  let firstItem = style.shift();
+  console.log(`Step 4: (first ${firstItem}) ${style}`);
+
+  style.unshift("Rap", "Reggae");
+  console.log(`Step 5: ${style}`);
+
 } //  5 array operations
 
 function t2() {
