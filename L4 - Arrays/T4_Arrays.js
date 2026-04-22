@@ -24,4 +24,10 @@ function t1() {
 
 function t2() {
   /* */
+  let string = "water,space suits,food,plasma sword,batteries";
+  let array = string.split(",");
+  array.sort()
+  let sortedString = array.join(",");
+  console.log(sortedString)
+
 } // Using split and join
