@@ -12,7 +12,21 @@
     2. while
     3. sum input
     4. number generator
+    5. funtions
 
 
 ## JS3
 - `Loops + Arrays`
+
+## Lesson 6
+- `Events`
+
+## Lesson 7
+- `DOM`
+    1. document.getElementbyID
+    2. document.querySelector("css rules")
+
+    - innerHTML
+    - textContent
+    - value
+    - Style...

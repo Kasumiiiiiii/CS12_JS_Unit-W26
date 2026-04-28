@@ -7,7 +7,13 @@
     <script>
       function myFunction() {
         alert("I want to change the para1 text to 'Hi there'");
+        let p1 = document.querySelector(".para1").textContent = "Hi there";
+
         alert("I want to add an additional line of text to para2. 'Goodbye'");
+        let p2 = document.querySelector(".para2").textContent = "Goodbye"
+
+        h1Text = document.querySelector("h1").textContent;
+        alert(h1Text);
       }
     </script>
   </head>
@@ -17,8 +23,8 @@
     <button
       type="button"
       name="button"
-      onclick="alert('Need to call Function');"
-    >       Click Me!
+      onclick="myFunction()"
+      >   Click Me!
     </button>
 
     <p class="para1">This is para1</p>
