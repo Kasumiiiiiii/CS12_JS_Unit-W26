@@ -8,11 +8,19 @@
 
   <body>
     <!-- Text -->
+    <label for = "colorPicker">Choose a color</label>
     <!-- Input Box -->
+    <input type = "text" class = "color" name = "color" value = "blue">
     <!-- Button -->
+    <button class = "pick" onClick = "changeColor()"> Change Color</button>
+
 
     <script>
       //function goes here
+      function changeColor() {
+        let useColor = document.querySelector(".color").value;
+        document.body.style.backgroundColor = useColor;
+      }
     </script>
   </body>
 </html>

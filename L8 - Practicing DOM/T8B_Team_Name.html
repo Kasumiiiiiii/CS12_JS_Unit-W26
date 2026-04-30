@@ -10,26 +10,50 @@
     <h3>Hover over image to get caption</h3>
 
     <img
-      src="https://charbricks.com/wp-content/uploads/2021/02/32-plain-blue.jpg"
+      src="rural-logo.png"
       height="125px"
-      alt=""
+      alt="Rural HS"
+      onmouseover="document.querySelector('#caption').value = 'Rural'"
+
     />
 
     <img
-      src="https://charbricks.com/wp-content/uploads/2021/02/32-plain-blue.jpg"
+      src="colonelgray_logo.jpg"
       height="125px"
-      alt=""
+      alt="Colonel Gray HS"
+      onmouseover="changeCaption(this.alt)"
     />
 
     <img
-      src="https://charbricks.com/wp-content/uploads/2021/02/32-plain-blue.jpg"
+      src="bluefield_logo.png"
       height="125px"
-      alt=""
+      alt="Bluefield"
+      onmouseover="changeCaption(this.alt)"
+      onmouseout="changeCaption('')"
     />
     <br />
     <!-- input box here for text of the caption -->
+    <input type = "text" id = "caption" name = "caption" value = "" size = "80px" />
+
     <script>
       //place function(s) here
+      const captionBox = document.querySelector("#caption");
+      function changeCaption(schoolName) {
+        captionBox.value = schoolName;
+      }
+
+      function rural() {
+        captionBox.value = "Charlottetown Rural High School";
+      }
+      function gray() {
+        captionBox.value = "Colonel Gray High School";
+      }
+      function blue() {
+        captionBox.value = "Bluefield High School";
+      }
+      function empty() {
+        captionBox.value = "";
+      }
       // don't forget to add event handlers to each img
     </script>
   </body>
