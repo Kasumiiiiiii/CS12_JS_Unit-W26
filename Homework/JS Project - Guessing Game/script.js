@@ -37,6 +37,8 @@ let highscore = 0;
   // - ? box reveals number
 function guess() {
     let userGuess = Number(guessObj.value);
+    let diff = Math.abs(randNum - userGuess);
+
     if (userGuess == randNum) {
         msgObj.textContent = "You Win!";
         document.body.style.backgroundColor = "#39c039";
@@ -59,7 +61,6 @@ function guess() {
     }
 
     // extension
-        let diff = Math.abs(randNum - userGuess);
         if (diff >= 19) {
           document.body.style.backgroundColor = "#0f100f";
       } else if (diff >= 17) {
@@ -93,7 +94,6 @@ function again() {
 
   //recalculate randNum
   randNum = getRandomIntInclusive(1, 20);
-  console.log("New Secret Number:", randNum);
 
   //background back to black
   document.body.style.backgroundColor = "black";
