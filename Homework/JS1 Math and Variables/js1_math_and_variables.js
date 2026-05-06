@@ -65,8 +65,13 @@ function q4() {
         let total = subtotal + tax;
 
         console.log(`Order: ${fries} fries and ${drinks} pop.`)
+<<<<<<< Updated upstream
         console.log(`Subtotal: ${friesTotalP.toFixed(2)} + ${drinkTotalP.toFixed(2)} = ${subtotal.toFixed(2)}`)
         console.log(`Total: ${subtotal.toFixed(2)} + tax = ${total.toFixed(2)}`)
+=======
+        console.log(`Subtotal: ${friesTotalP} + ${drinkTotalP} = ${subtotal}`)
+        console.log(`Total: ${subtotal} + tax = ${total}`)
+>>>>>>> Stashed changes
 } //Food Order
 
 function q5() {
