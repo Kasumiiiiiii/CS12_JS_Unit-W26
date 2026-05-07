@@ -9,7 +9,52 @@
 </head>
 
 <body>
-  Hello world
+  
+  <div class = "wrapper">
+    <h1 class = "heading">Johnny LaRue's Burger Drive-Thru</h1>
+    <p class = "subheading">A Big Man Ltd. Subsidiary</p>
+    <div class="box">
+    <img height = 250px src = "burgers.gif">
+    <form action = "#" class = "orderform">
+      <div class = "field">
+        <label for = "name">Name</label>
+        <input type = "text" class = "name"/>
+      </div>
+      <div class = "field">
+        <label for = "numBurgers"># of Burgers: </label>
+        <input type = "text" id = "numBurgers" class = "numBurgers"/>
+      </div>
+      <div class = "field">
+        <label for = "numFries"># of Fries: </label>
+        <input type = "text" id = "numFries" class = "numFries"/>
+      </div>
+      <div class = "field">
+        <label for = "numDrinks"># of Drinks: </label>
+        <input type = "text" id = "numDrinks" class = "numDrinks"/>
+      </div>
+      <div class = "field">
+        <label for = "subtotal">Subtotal: </label>
+        <input type = "text" id = "subtotal" class = "subtotal" readonly/>
+      </div>
+      <div class = "field">
+        <label for = "tax">Tax: </label>
+        <input type = "text" id = "tax" class = "tax" readonly/>
+      </div>
+      <div class = "field">
+        <label for = "total">Total: </label>
+        <input type = "text" id = "total" class = "total" readonly/>
+      </div>
+
+      <div class = "field">
+        <button type = "button" class = "btn orderBtn">Order Total</button>
+      </div>
+        <div class="field">
+        <button type = "reset" class = "btn resetBtn">Reset</button>
+      </div>
+        
+  </form>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 

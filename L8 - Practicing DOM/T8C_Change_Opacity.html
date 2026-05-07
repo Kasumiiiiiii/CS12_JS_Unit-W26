@@ -17,27 +17,43 @@
 
     <div class="box">Box</div>
     <br />
-    <!-- add button for lighter -->Lighter!
-    <!-- add button for darker -->Darker!
+    <!-- add button for lighter -->
+    <button class = "btnLight"> Lighter! </button>
+    <!-- add button for darker -->
+    <button class = "btnDark"> Darker! </button>
 
     <script>
       // ELEMENTS
       let box_obj = document.querySelector(".box");
+      let btnLight = document.querySelector(".btnLight");
+      let btnDark = document.querySelector(".btnDark")
       box_obj.style.opacity = 0.5; //set box to starting opacity
 
       //VARIABLES
       //opacity variable
+      let opacityValue = 0.5;
 
       //FUNCTIONS
       //light function decreases opacity
-      function light() {}
+      function light() {
+        opacityValue -= 0.1;
+        box_obj.style.opacity = opacityValue;
+      }
+      document.querySelector(".btnLight").addEventListener("click", light);
 
       //dark function increases opacity
-      function dark() {}
+      function dark() {
+        opacityValue += 0.1;
+        box_obj.style.opacity = opacityValue;
+      }
+      document.querySelector(".btnDark").addEventListener("click", dark);
 
       //EVENT LISTENERS
       //add a click event to light button that calls the light function
+      btnLight.addEventListener("click", light);
+      
       //add a click event to dark button that calls the dark function
+      btnDark.addEventListener("click", dark);
     </script>
   </body>
 </html>
