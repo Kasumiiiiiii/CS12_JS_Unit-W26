@@ -28,15 +28,17 @@ function calculateOrder() {
     let tax = subtotal * taxRate;
     let total = subtotal + tax;
 
-    subtotalOutput.value = subtotal.toFixed(2);
-    taxOutput.value = tax.toFixed(2);
-    totalOutput.value = total.toFixed(2);
+    subtotalOutput.value = "$" + subtotal.toFixed(2);
+    taxOutput.value = "$" + tax.toFixed(2);
+    totalOutput.value = "$" + total.toFixed(2);
 }
 
 function validate(value) {
     let num = Number(value);
     if(isNaN(num) || num < 0) {
         return 0;
+    } else {
+        return num;
     }
 }
 

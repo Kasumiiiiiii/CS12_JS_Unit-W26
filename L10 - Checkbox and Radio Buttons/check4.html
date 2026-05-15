@@ -6,6 +6,15 @@
     <script>
       function lights() {
              //need code here
+             let isChecked = document.querySelector("#lightChkBox").checked;
+             let formText = document.querySelector("form");
+             if (isChecked == true) {
+              document.body.style.backgroundColor = "black";
+              formText.style.color = "white";
+             } else {
+              document.body.style.backgroundColor = "white";
+              formText.style.color = "black";
+             }
        }      
     </script>
   </head>

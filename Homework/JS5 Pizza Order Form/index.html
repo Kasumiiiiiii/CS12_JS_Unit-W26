@@ -35,31 +35,54 @@
             <div class="field">
               # of Pizzas:
               <!--number input -->
+              <input type="number" class="pizzaCount" value="" />
             </div>
             <div class="field">
-              Size: Small Medium Larger
+              Size:
               <!--three radio buttons-->
+              <input
+                type="radio"
+                name="size"
+                value="small"
+                onClick="changeSize()"
+              />
+              Small
+              <input
+                type="radio"
+                name="size"
+                value="medium"
+                onClick="changeSize()"
+              />
+              Medium
+              <input
+                type="radio"
+                name="size"
+                value="large"
+                onClick="changeSize()"
+              />
+              Large
             </div>
             <hr />
 
             <h4>Toppings</h4>
             <!-- add a topping here -->
-            <br />
+            <input type="checkbox" class="topping" /> Cheese <br />
             <!-- add a topping here -->
-            <br />
+            <input type="checkbox" class="topping" /> Pepperoni <br />
             <!-- add a topping here -->
-            <br />
+            <input type="checkbox" class="topping" /> Onions <br />
             <!-- add a topping here -->
-            <br />
+            <input type="checkbox" class="topping" /> Bacon <br />
             <!-- add a topping here -->
-            <br />
+            <input type="checkbox" class="topping" /> Spinach <br />
 
             <br />
             <hr />
             <div style="margin: 0 auto">
               <!--add order button here -->
-
+              <button type="button" onClick="orderTotal()">Order Total</button>
               <!--add reset button here -->
+              <button type="button" onClick="resetOrder()">Reset</button>
             </div>
           </form>
         </div>

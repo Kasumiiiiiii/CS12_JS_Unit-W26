@@ -5,11 +5,38 @@
     <title>Checkbox Problem</title>
     <script>
       //need code here
+      function checkResults() {
+        const checkboxes = document.querySelectorAll('input[name="language"]');
+        let selectedLanguages = [];
+        checkboxes.forEach((checkbox) => {
+          if (checkbox.checked) {
+            selectedLanguages.push(checkbox.value);
+          }
+        });
+        console.log("Selected languages:", selectedLanguages);
+        const messageDiv = document.querySelector(".message");
+        messageDiv.textContent = "You selected " + selectedLanguages.join(", ");
+      }
     </script>
   </head>
   <body>
     <form>
       <!-- need code here-->
+      <p>Please select your favourite programming language(s):</p>
+      <label for="JavaScript">JavaScript</label>
+      <input
+        type="checkbox"
+        id="JavaScript"
+        name="language"
+        value="JavaScript"
+      />
+      <label for="Python">Python</label>
+      <input type="checkbox" id="Python" name="language" value="Python" />
+      <label for="Java">Java</label>
+      <input type="checkbox" id="Java" name="language" value="Java" />
+      <br />
+      <button type="button" onclick="checkResults()">Check Results</button>
+      <div class="message">You selected...</div>
     </form>
   </body>
 </html>
